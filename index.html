@@ -4,20 +4,19 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Boostrap css -->
-<link 
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-  rel="stylesheet" 
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-  crossorigin="anonymous">
-      <!-- Font-Awesome css -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+      <!-- Bootstrap CSS (CDN) -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <!-- AOS CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-      <title>My Portfolio</title>
+
+      <!-- Optional local AOS overrides / other styles -->
+      <link rel="stylesheet" href="css/aos.css">
+      <title>Mon Portfolio</title>
 </head>
 
-<body>
+<body class="pt-5">
       <header class="position-fixed w-100 top-0" style="z-index: 1000;">
             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
                   <div class="container">
@@ -52,9 +51,10 @@
             </nav>
       </header>
       <!-- Accuiel -->
-      <div id="Accueil" class="container vh-100 position-relative top-6 w-100">
+      <div id="Accueil" class="container position-relative w-100 py-5">
             <div class="row d-flex flex-column flex-md-row justify-content-center align-items-center">
                   <div class="col order-2 order-md-1 w-100 w-md-50 d-flex flex-column justify-content-center">
+                  <div class="col-12 col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center">
                         <h3 class="mb-3 fs-1 fw-600">
                               je suis <span class="text-primary">Abdoul Raouf</span>
                         </h3>
@@ -64,7 +64,7 @@
                         <div class="row gap-2 mx-auto">
                               <!-- GitHub -->
                               <div class="col-2 d-flex justify-content-center align-items-center">
-                                    <a href="https://github.com/AbdoulRaouf2005" target="_blank"
+                                    <a href="https://github.com/AbdoulRaouf2005" target="_blank" rel="noopener noreferrer"
                                           class="rounded-circle d-flex justify-content-center align-items-center shadow-sm bg-white text-dark text-decoration-none"
                                           style="width: 60px; height: 60px;">
                                           <i class="fa-brands fa-github fs-2"></i>
@@ -74,7 +74,7 @@
                               <!-- LinkedIn -->
                               <div class="col-2 d-flex justify-content-center align-items-center">
                                     <a href="https://www.linkedin.com/in/abdoulraouf-harouna-b39147342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                          target="_blank"
+                                          target="_blank" rel="noopener noreferrer"
                                           class="rounded-circle d-flex justify-content-center align-items-center shadow-sm bg-white text-primary text-decoration-none"
                                           style="width: 60px; height: 60px;">
                                           <i class="fa-brands fa-linkedin fs-2"></i>
@@ -83,7 +83,7 @@
 
                               <!-- WhatsApp -->
                               <div class="col-2 d-flex justify-content-center align-items-center">
-                                    <a href="https://wa.me/message/EBR7AHVQQDMVP1" target="_blank"
+                                    <a href="https://wa.me/message/EBR7AHVQQDMVP1" target="_blank" rel="noopener noreferrer"
                                           class=" d-flex rounded-circle justify-content-center align-items-center shadow-sm bg-white text-success text-decoration-none"
                                           style="width: 60px; height: 60px;">
                                           <i class="fa-brands fa-whatsapp fs-2"></i>
@@ -92,6 +92,9 @@
                         </div>
                   </div>
                   <div class="col order-1 order-md-2 w-100 w-md-50 d-flex justify-content-center align-items-center">
+                  <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center">
+                        <h3 class="mb-3 fs-1 fw-bold">
+                        <p class="mb-4 fs-6 fw-normal">
                         <div class="rounded-circle overflow-hidden" id="Zone_Image">
                               <img src="asset/Hero Man/Ma_Photo2.png" class="img-fluid w-auto" alt="Ma Photo">
                         </div>
@@ -157,7 +160,7 @@
                               <div class="card projet-card h-100"
                                     data-aos="slide-up" data-aos-delay="0">
                                     <img src="asset/ProjectPicture/GENDY_BY_ABDOUL.png" class="card-img-top"
-                                          style="height: 200px; object-fit: cover;" alt="${projet.titre}">
+                                          style="height: 200px; object-fit: cover;" alt="Gendy">
                                     <div class="card-body d-flex flex-column">
                                           <div class="d-flex justify-content-between align-items-start mb-2">
                                                 <h5 class="card-title">Gendy</h5>
@@ -173,11 +176,11 @@
                                           </div>
                                           <div class="btn-group w-100 mt-auto">
                                                 <a href="https://github.com/AbdoulRaouf2005/LUMIN"
-                                                      class="btn btn-outline-primary" target="_blank">
+                                                      class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
                                                       <i class="far fa-eye me-2 fs-5"></i>
                                                 </a>
                                                 <a href="https://github.com/AbdoulRaouf2005/LUMIN"
-                                                      class="btn btn-outline-dark" target="_blank"
+                                                      class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer"
                                                       style="min-width: 50px;">
                                                       <i class="fab fa-github me-2 fs-5"></i>
                                                 </a>
@@ -205,11 +208,11 @@
                                           </div>
                                           <div class="btn-group w-100 mt-auto">
                                                 <a href="https://abdoulraouf2005.github.io/Calculatrice"
-                                                      class="btn btn-outline-primary" target="_blank">
+                                                      class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
                                                       <i class="far fa-eye me-2 fs-5"></i>
                                                 </a>
                                                 <a href="https://github.com/AbdoulRaouf2005/Calculatrice"
-                                                      class="btn btn-outline-dark" target="_blank"
+                                                      class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer"
                                                       style="min-width: 50px;">
                                                       <i class="fab fa-github me-2 fs-5"></i>
                                                 </a>
@@ -237,11 +240,11 @@
                                           </div>
                                           <div class="btn-group w-100 mt-auto">
                                                 <a href="https://abdoulraouf2005.github.io/LUMIN"
-                                                      class="btn btn-outline-primary" target="_blank">
+                                                      class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
                                                       <i class="far fa-eye me-2 fs-5"></i>
                                                 </a>
                                                 <a href="https://github.com/AbdoulRaouf2005/LUMIN"
-                                                      class="btn btn-outline-dark" target="_blank"
+                                                      class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer"
                                                       style="min-width: 50px;">
                                                       <i class="fab fa-github me-2 fs-5"></i>
                                                 </a>
@@ -288,8 +291,8 @@
                                     </div>
 
                                     <!-- Bouton d'envoi -->
-                                    <div class="d-grid w-25">
-                                          <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center">
+                                    <div class="d-grid" style="max-width:220px;">
+                                          <button type="submit" class="btn btn-primary w-100 d-flex justify-content-center align-items-center">
                                                 <i class="fas fa-paper-plane me-2"></i>
                                           </button>
                                     </div>
@@ -325,7 +328,7 @@
                         <div class="row w-50 d-flex justify-content-between mx-auto">
                               <!-- GitHub -->
                               <div class="col-3 d-flex justify-content-center">
-                                    <a href="https://github.com/AbdoulRaouf2005" target="_blank"
+                                    <a href="https://github.com/AbdoulRaouf2005" target="_blank" rel="noopener noreferrer"
                                           class="rounded-circle d-flex justify-content-center align-items-center shadow-sm bg-white text-dark text-decoration-none"
                                           style="width: 60px; height: 60px;">
                                           <i class="fa-brands fa-github fs-2"></i>
@@ -335,7 +338,7 @@
                               <!-- LinkedIn -->
                               <div class="col-3 d-flex justify-content-center">
                                     <a href="https://www.linkedin.com/in/abdoulraouf-harouna-b39147342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                                          target="_blank"
+                                          target="_blank" rel="noopener noreferrer"
                                           class="rounded-circle d-flex justify-content-center align-items-center shadow-sm bg-white text-primary text-decoration-none"
                                           style="width: 60px; height: 60px;">
                                           <i class="fa-brands fa-linkedin fs-2"></i>
@@ -344,7 +347,7 @@
 
                               <!-- WhatsApp -->
                               <div class="col-3 d-flex justify-content-center">
-                                    <a href="https://wa.me/message/EBR7AHVQQDMVP1" target="_blank"
+                                    <a href="https://wa.me/message/EBR7AHVQQDMVP1" target="_blank" rel="noopener noreferrer"
                                           class=" d-flex rounded-circle justify-content-center align-items-center shadow-sm bg-white text-success text-decoration-none"
                                           style="width: 60px; height: 60px;">
                                           <i class="fa-brands fa-whatsapp fs-2"></i>
@@ -357,16 +360,16 @@
             </div>
             </div>
       </footer>
-      <!-- Boostrap js -->
-      <script 
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-  crossorigin="anonymous"></script>
+      <!-- Bootstrap JS (CDN) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       <!-- AOS JS -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       <!-- Main js -->
       <script src="js/main.js"></script>
-      
+
+      <script>
+            if (window.AOS) AOS.init();
+      </script>
 </body>
 
 </html>
